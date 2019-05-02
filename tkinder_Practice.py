@@ -1,0 +1,20 @@
+from tkinter import*
+def say_hi():
+    print("Hi")
+def change():
+    t=en.get()
+    la.config(text=t)
+win = Tk()
+win.title("B10523025")
+win.geometry("400x200+800+400")
+win.minsize(width=100,height=100)
+win.attributes("-alpha",1)
+win.attributes("-topmost",0)
+btn = Button(text="click me",bg="skyblue")
+btn.config(command=change)
+btn.pack()
+en = Entry()
+en.pack()
+la = Label(bg="white",fg="black",text="this is label")
+la.pack()
+win.mainloop()
